@@ -69,7 +69,7 @@ services:
   # =========================
 
   eureka:
-    image: queryhub-eureka:1.0
+    image: swap0502/queryhub-eureka:1.0
     container_name: queryhub-eureka
     ports:
       - "8761:8761"
@@ -83,7 +83,7 @@ services:
   # =========================
 
   auth:
-    image: queryhub-auth:1.0
+    image: swap0502/queryhub-auth:1.0
     container_name: queryhub-auth
     ports:
       - "8081:8081"
@@ -111,7 +111,7 @@ services:
   # =========================
 
   question:
-    image: queryhub-question:1.0
+    image: swap0502/queryhub-question:1.0
     container_name: queryhub-question
     ports:
       - "8082:8082"
@@ -140,7 +140,7 @@ services:
   # =========================
 
   gateway:
-    image: queryhub-gateway:1.0
+    image: swap0502/queryhub-gateway:1.0
     container_name: queryhub-gateway
     ports:
       - "8080:8080"
@@ -166,7 +166,7 @@ services:
   # =========================
 
   frontend:
-    image: queryhub-frontend:1.0
+    image: swap0502/queryhub-frontend:1.0
     container_name: queryhub-frontend
     ports:
       - "80:80"
